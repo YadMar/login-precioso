@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+
+ 
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>login acces</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    
+    
+   <style type="text/css" media="all">
+   body{
+     background-color: rgba(80,80,80,1);
+    //background-color: rgba(255,1,100,0.5); 
+    
+   //background: linear-gradient(45deg, green, rgba(255,100,255,1), rgba(255,2,0,1), blue, yellow);
+    
+
+ 
+
+    
+   }
+
+     
+     .section{
+       display: grid;
+       grid-template-columns: repeat(auto-fit, 300px);
+       
+       justify-content: center;
+       gap: 8px;
+       padding-top: 10px;
+       margin-bottom: 200px;
+       padding-left: 5px;
+       padding-right: 5px;
+       padding-bottom: 10px;
+      
+       border-radius: 10px 10px 0px 0px;
+       background-color: rgba(0,0,0,0.2);
+       
+     }
+     
+     .article{
+       display: grid;
+       grid-template-rows: repeat(1, 1fr);
+       grid-template-columns: 70px 1fr;
+       gap: 8px;
+       background-color: rgba(50,50,100,0.4);
+       border: solid 0.1px rgba(0,0,0,0.3);
+       padding-left: 12px;
+       padding-right: 12px;
+       border-radius: 10px;
+       align-items: center;
+       
+     }
+     
+     .label{
+       
+       font-size: 14px;
+       color: white;
+       overflow: auto;
+       margin: 0px;
+       font: normal 14px verdana;
+       
+     }
+     
+     #input{
+       
+       
+       height: 50px;
+      background-color: rgba(0,0,0,0);
+  
+      border-bottom-color: white;
+      margin-bottom: 4px;
+      color: white;
+      overflow: auto;
+     font-size: 20px;
+     
+      border-left: none;
+      border-top: none;
+      border-right: none;
+       outline: none;
+      
+       caret-color: red;
+       
+    
+     font-family: Monospace;
+      
+       
+     }
+     
+     #input:input{
+       
+       
+       background-color: red;
+     }
+     
+     .title{
+       
+       color: white;
+       font-size: 20px;
+       font: bold 20px verdana;
+     }
+     
+     center{
+       margin-top: 15vh;
+     }
+     
+   
+     
+  .article:nth-child(5){
+  
+   padding: 3px;
+   border-radius: 0px;
+   
+  }
+ .section .article .button:nth-child(1):active{
+   transition-property: background-color;
+   transition-duration: 1s ;
+   transition-timing-function: ease-out;
+   
+  background-color: rgba(0,0,0, 0.5);
+  
+  }
+
+     .article .button:nth-child(1){
+       
+       transition: background;
+       transition-duration: 3s;
+       transition-timing-function: ease-out;
+       
+       height: 50px;
+       
+      background-color: rgba(50,50,100, 0.1);
+       
+       grid-row: 1/3;
+       grid-column: 1/3;
+       border-radius: 6px;
+       color: white;
+       font-size: 20px;
+       outline: none;
+       border: none;
+     }
+
+ 
+     
+    
+   </style> 
+    
+    
+  </head>
+  <body>
+    <center>
+      
+    <h1 class="title">Loggin de acceso</h1>
+    <section class="section">
+      
+      <article class="article">
+        <p class="label">Nombre:</p>
+        <input type="text" name="input" id="input" value="" placeholder="Nombre" />
+      </article>
+      
+   <article class="article">
+        <p class="label">Apellido:</p>
+        <input type="text" name="input" id="input" value="" placeholder="Apellido" />
+      </article>
+      
+   <article class="article">
+        <p class="label">Telefono:</p>
+        <input type="number" name="input" id="input" value="" placeholder="Telefono" />
+      </article>
+      
+      
+   <article class="article">
+        <p class="label">Contraseña:</p>
+        <input type="password" name="input" id="input" value="" placeholder="Contraseña" />
+      </article>
+      
+     <article class="article">
+       <button type="submit" class="button">INICIAR SESION</button>
+      </article>
+      
+    </section>
+      
+    </center>
+    
+  </body>
+</html>
